@@ -1,0 +1,20 @@
+import { res  } from "./level.js";
+const user = res;
+// const meuUser = user.json()
+// .then(res=>res)
+// .then(data=>console.log("Dado acessado: ",data))
+// .catch(e=>console.error("Erro:", e.message))
+
+try{
+    const userNovo = await user.json()
+    if(res.ok){
+        console.log("Requisicao feita com sucesso: ",res.status)
+        const data = userNovo
+        console.log(data)
+        console.log("Nome da empresa:",userNovo.company?.name)
+    }
+}
+catch(e){
+    console.error("Erro: ", e.message)
+}
+
