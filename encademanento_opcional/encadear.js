@@ -42,6 +42,29 @@ console.log(customerCity)
 console.log(customerCityA)
 console.log(customerAge)
 
+
+const person = {
+    name: "Dylan",
+    profission: "Software Enginner",
+    address: {
+        city: "Luanda",
+        zona: "Kapalanga",
+        curse: {
+            type:"JavaScript", id: 2,
+            skill:["futebol", "andebol"]
+        }
+    }
+}
+
+// const acessInfor = person.name && person.address.city
+// com encadeamento
+// const acessInfor =  person.address?.curse?.skill[0]
+// Gerando valor nao definido (undefined)
+
+const propIndefinido =  person.car
+console.log(propIndefinido)
+// console.log(acessInfor)
+
 // … isso também funcional com encadeamento opcional em chamada de função
 let duration = vacations.trip?.getTime?.();
 
