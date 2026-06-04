@@ -1,9 +1,8 @@
 // logical OR assignment
 // falsy values : 0, "", false, NaN, undefined, null
-let c = "",
-if(c ||= "Texto padrao"){
-    console.log(c)
-}
+let c = ""
+c ||= "Texto padrao"
+console.log(c)
 let num = 9
 num ||="Tem novo numero"
 console.log(num)
@@ -14,7 +13,11 @@ console.log(valor)
 
 let config = null;
 config ??= { apiUrl: 'https://api.exemplo.com' };
-console.log(config); // { apiUrl: 'https://api.exemplo.com' }
+console.log(config); 
+
+const nome = "DevJocas"
+nome ??= "Programador"
+console.log(nome)
 
 // &&=(Logical AND ASSIGNMENT) - QUANDO o valor é truthy(verdadeiro)
 // &&= Equivalente a: x&&= y->x&& (x=y)
