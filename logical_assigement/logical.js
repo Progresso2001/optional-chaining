@@ -1,9 +1,12 @@
-//logical OR assignment
+// logical OR assignment
 // falsy values : 0, "", false, NaN, undefined, null
 let c = "",
 if(c ||= "Texto padrao"){
     console.log(c)
 }
+let num = 9
+num ||="Tem novo numero"
+console.log(num)
 
 let valor = undefined;
 valor ||= "Inserir valor";
@@ -14,7 +17,7 @@ config ??= { apiUrl: 'https://api.exemplo.com' };
 console.log(config); // { apiUrl: 'https://api.exemplo.com' }
 
 // &&=(Logical AND ASSIGNMENT) - QUANDO o valor é truthy(verdadeiro)
-//&&= Equivalente a: x&&= y->x&& (x=y)
+// &&= Equivalente a: x&&= y->x&& (x=y)
 
 let userAtivo = true
 userAtivo &&= false
@@ -88,16 +91,16 @@ pessoa.curso.profissao ??= "Analista de Dados"
 console.log(pessoa.curso.salario)
 console.log(pessoa)
 
-//nota: usando o if bloqueia a execução do ??= e retorna null ou undefined
+// nota: usando o if bloqueia a execução do ??= e retorna null ou undefined
 // ou seja nao é aconselhavel o uso o if em ??=
-// let pessoa ={
-// nome:"DevJocas", 
-// curso: {
-//     curso_A: "JavaScript",
-//     profissao: undefined,  // ← valor é undefined e null 
-//     salario: 40
-//     }
-// }
-// if(pessoa?.curso?.salario){  // ← null é falsy! condição é FALSE
-//     pessoa.curso.salario ??= "Analista de Dados"
-// }
+let pessoa ={
+nome:"DevJocas", 
+curso: {
+    curso_A: "JavaScript",
+    profissao: undefined,  // ← valor é undefined e null 
+    salario: 40
+    }
+}
+if(pessoa?.curso?.salario){  // ← null é falsy! condição é FALSE
+    pessoa.curso.salario ??= "Analista de Dados"
+}
