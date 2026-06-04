@@ -1,0 +1,27 @@
+// import { res  } from "./level.js";
+// const user = res;
+// const meuUser = user.json()
+// .then(res=>res)
+// .then(data=>console.log("Dado acessado: ",data))
+// .catch(e=>console.error("Erro:", e.message))
+
+// // Usando o bloco try e catch
+// try{
+//     const userNovo = await user.json()
+//     if(res.ok){
+//         console.log("Requisicao feita com sucesso: ",res.status)
+//         const data = userNovo
+//         console.log(data)
+//         console.log("Nome da empresa:",userNovo.company?.name)
+//     }
+// }
+// catch(e){
+//     console.error("Erro: ", e.message)
+// }
+
+
+import { usuarios } from "./level.mjs";
+
+const saidaUser = await usuarios
+console.log("User: ",saidaUser)
+
