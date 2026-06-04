@@ -21,6 +21,7 @@ if(indeceNotExist === undefined){
         console.log("Nome: ", converterNome)
 }
 
+// // Exemplos
 const linguagens = ['Python', "Golang", "C++","C#", "JavaScript"]
 
 function retornarUltimoValor(index){
@@ -30,4 +31,31 @@ function retornarUltimoValor(index){
 const valorUltimo = retornarUltimoValor(linguagens) 
 console.log("Retorno do ultimo valor:",valorUltimo)
 
+// comparando metodos
 
+const colors = ["green", "red", "blue"]
+// Usando a prop length
+const lengthColor = colors[colors.length-2]
+if(lengthColor === undefined){
+    console.log("Inserir numero menor que o tamanho")
+}else{
+    console.log("Valor certo: ", lengthColor)
+
+}
+
+// metodo slice(start, end)
+
+const sliceWay = colors.slice(-2,-1)
+console.log(sliceWay[0])
+
+// usando o at()
+const atWay =  colors.at(-2)
+console.log(atWay)
+
+const colors = ["green", "red", "blue", "pink"]
+const valorIndex = -2
+const acessarValor = colors.at(valorIndex)
+console.log(acessarValor)
+// ou
+const valorTamanho = colors[colors.length + valorIndex]
+console.log(valorTamanho)
