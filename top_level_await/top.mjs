@@ -23,7 +23,7 @@ catch(e){
 import { usuarios } from "./level.mjs";
 
 const saidaUser = await usuarios
-console.log("User: ",saidaUser)
+console.log("User: ",saidaUser) 
 
 import { res } from "./level.mjs"
 
@@ -31,7 +31,7 @@ const dadoUser =  res
 try{
     const userNovo = await dadoUser.json()
     if(res.ok){
-        console.log("Request boa:",res.status)
+        console.log("Dados novos:",res.statusText)
         const data = userNovo
         console.log(data)
         
