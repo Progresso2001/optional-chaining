@@ -91,7 +91,17 @@
 
 
 
-const usuarios = await fetch("https://jsonplaceholder.typicode.com/users/1")
+const usuarios = await fetch("https://jsonplaceholder.typicode.com/posts", {
+  method:"POST",
+  headers:{
+    'Content-Type': 'application/json',
+    body: JSON.stringify({
+      id:1,
+      title:'JavaScript',
+      body: 'DevJocas'
+    })
+  }
+})
 const res = usuarios
 
 export { res }

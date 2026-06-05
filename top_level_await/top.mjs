@@ -20,10 +20,10 @@ catch(e){
 }
 
 
-// import { usuarios } from "./level.mjs";
+import { usuarios } from "./level.mjs";
 
-// const saidaUser = await usuarios
-// console.log("User: ",saidaUser)
+const saidaUser = await usuarios
+console.log("User: ",saidaUser)
 
 import { res } from "./level.mjs"
 
