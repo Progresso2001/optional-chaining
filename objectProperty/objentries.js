@@ -1,5 +1,6 @@
 /*
-O object.entries retorna uma array dos proprios chave e valores, enumeraveis de prop string-keyed de um dado objecto
+O object.entries retorna uma array dos proprios chave e valores, 
+enumeraveis de prop string-keyed de um dado objecto
 
 */
 
@@ -45,7 +46,8 @@ for(let [key, value] of Object.entries(nome)){
     console.log(`${key}: ${value}`)
 }
 
-//2-Outros primitivos exceptos undefined e null nao tem propria propriedade e retorna array vazio
+//2-Outros primitivos exceptos undefined e null nao
+//  tem propria propriedade e retorna array vazio
 console.log(Object.entries(100))
 
 // Conversão de um objeto em um mapa
@@ -63,5 +65,5 @@ for (const [key, value] of Object.entries(obj)) {
 
 // Using array methods
 Object.entries(obj).forEach(([key, value]) => {
-  console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
+  console.log(`${key}: ${value}`); // "a 5", "b 7", "c 9"
 });
