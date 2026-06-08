@@ -30,3 +30,21 @@ const transformed = Object.fromEntries(
  Object.entries(original).map(([key, value]) => [key, value * 2])
 );
 console.log(transformed);
+
+
+const myData = [['nome', 'DevJocas'], ['profissao', 'Programador'], ['cidade', 'Luanda'],
+  ['salario', '10000000kz']
+]
+const verDataObj = Object.fromEntries(myData)
+const verJson = JSON.stringify(verDataObj, null, 2)
+console.log(verJson) 
+const acessarProOBj= verDataObj?.profissao
+console.log("Tornarei-me:",acessarProOBj) 
+
+if(verDataObj.salario === undefined){
+  console.log("Verificar o array")
+}else{
+  console.log("Dados atualizados:", verDataObj)
+}
+  console.log("Salario atualizado:", verDataObj.salario)
+
