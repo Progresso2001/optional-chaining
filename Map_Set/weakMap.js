@@ -30,3 +30,12 @@ function myWeakMap(){
     console.log(nomeUser.has(userNome))
 }
 myWeakMap()
+
+// Usando Referencia Forte e fraca
+
+let dog = {nome:'Mica'}
+const pets = [dog] //Referencia dog
+dog = null
+console.log(pets)
+
+
