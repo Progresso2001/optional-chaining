@@ -23,6 +23,11 @@ console.log(linguagem.indexOf('p'))
 console.log(linguagem.slice(0, 4))
 console.log(linguagem.slice(2))
 
+//substring(startindex, endindex)
+let email = 'devjocas@gmail.com'
+let user = email.substring(0, email.indexOf('@'))
+console.log(user)
+
 // 2-toUpperCase()
 console.log(linguagem.toUpperCase())
 //converte Primeira String 
